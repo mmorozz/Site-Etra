@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "source_sans_pro";
+    src: url(fonts/SourceSansPro-Light.woff);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "source_sans_pro";
+    src: url(fonts/SourceSansPro-Bold.woff);
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: "source_sans_pro";
+}
+
+a {
+    font-family: "source_sans_pro";
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    height: 60px;
+    margin-left: 170px;
+}
+
+.links {
+    display: flex;
+    margin-right: 170px;
+}
+
+.links a {
+    font-size: 25px;
+    padding: 10px;
+    color: #333333;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #ed6521;
+    transition: 0.3s;
+}
+
+.conteudo {
+    margin: 0px 170px 0px 170px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+.conteudo p {
+    font-size: 13pt;
+    text-align: justify;
+    padding-right: 100px;
+}
+
+.foto {
+    max-width: 40%;
+    min-height: 40%;
+    border: 6px solid #ed6521;
+    border-radius: 0px 80px 0px 80px;
+}
+
+.foto_mobile {
+    display: none;
+}
+
+.footer {
+    background-color: #333333;
+    display: flex;
+    border-radius: 0px 70px 0px 0px;
+    margin-top: 200px;
+    padding: 100px;
+    color: #ed6521;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 100px 170px 100px 170px;
+}
+
+.info {
+    margin-right: 60px;
+}
+
+.info img {
+    width: 10%;
+}
+
+.footer img {
+    max-width: 200px;
+    height: auto;
+}
+
+.informa {
+    font-size: 13pt;
+    margin-top: 50px;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+.informa p {
+    padding-bottom: 5px;
+}
+
+.informa img {
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+.trabalhos {
+    color: #ed6521;
+    margin-top: 60px;
+    padding: 100px 170px 100px 170px;
+}
+
+.botao {
+    display: flex;
+    position: fixed;
+    background-color: #ed6521;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    left: 95%;
+    top: 90%;
+}
+
+.botao a {
+    margin-top: 5px;
+    padding: 0px 15px 0px 15px;
+    color: #333333;
+}
+
+.trab {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0px 170px 100px 170px;
+    text-align: justify;
+}
+
+.image {
+    color: #333333;
+    margin-left: 70px;
+    border-top: solid 3px #ed6521;
+}
+
+.image p {
+    padding-top: 15px;
+}
+
+.trab img {
+    max-width: 45%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid 4px #ed6521;
+        height: 100px;
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    .logo {
+        margin-left: 0px;
+        height: 70px;
+        margin-top: -7px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .botao {
+        display: none;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 40px 0px 40px;
+        padding-top: 0px;
+    }
+
+    .element p {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .foto_mobile {
+        display: flex;
+        max-width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .trabalhos {
+        margin-top: 0px;
+        padding: 100px 40px 50px 40px;
+    }
+
+    .trab {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 40px 100px 40px;
+        text-align: justify;
+    }
+
+    .trab img {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .image {
+        margin-left: 0px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 40px 100px 40px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .info {
+        margin-right: 0px;
+    }
+
+    .titulo{
+        font-size: 15pt;
+    }
+    
+}
+
